@@ -3,43 +3,94 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Arsh Singh</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="favicon.ico" />
+        <title>Arsh Singh | Resume</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="scripts.js"></script>
     </head>
     <body>
-        <header>
+        <div class="header">
             <h1>Arsh Singh</h1>
-        </header>
+            <p>
+                <a href="tel:+15164197200">516-419-7200</a> |
+                <a href="mailto:as4274@cornell.edu">as4274@cornell.edu</a>
+            </p>
+            <p>
+                <a href="https://linkedin.com/in/arshsingh5/" target="_blank"> <img src="images/linkedin-logo.png" alt="LinkedIn" class="social-icon" />LinkedIn</a>
+                |
+                <a href="https://github.com/Arsh-S" target="_blank"> <img src="images/github-logo.png" alt="GitHub" class="social-icon" />GitHub</a>
+            </p>
+            <p>
+                <a href="Resume.pdf"> <img src="images/resume-logo.png" alt="Resume" class="social-icon" />Resume</a>
+            </p>
+        </div>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <iframe id="resumeFrame" src="./Resume.pdf" width="100%" height="800"></iframe>
-        </section>
+        <!-- Tab Navigation -->
+        <div class="tabs">
+            <button class="tablinks active" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+            <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+        </div>
 
-        <section id="links">
-            <h2>Connect with Me</h2>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/arshsingh5/" target="_blank">
-                    <img src="./linkedin-logo.png" alt="LinkedIn" class="social-logo" />
-                </a>
-                <a href="https://github.com/Arsh-S" target="_blank">
-                    <img src="./github-logo.png" alt="GitHub" class="social-logo" />
-                </a>
-            </div>
-        </section>
+        <!-- Tab Content -->
+        <div id="Home" class="tabcontent" style="display: block">
+            <h2>Welcome</h2>
+            <p>This is the homepage with general information.</p>
+        </div>
 
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <div class="contact-info">
-                <p><strong>Email:</strong> as4274@cornell.edu</p>
-                <p><strong>Phone:</strong> (516) 419-7200</p>
-                <!-- Add More -->
-            </div>
-        </section>
+        <div id="Education" class="tabcontent">
+            <h2>Education</h2>
+            <p><strong>Cornell University</strong> - Ithaca, NY</p>
+            <p>Bachelor of Science in Computer Science, Dyson Business Minor for Engineers</p>
+            <p>August 2024 - Present</p>
+            <h4>Relevant Coursework:</h4>
+            <ul>
+                <li>Object-Oriented Programming and Data Structures*</li>
+                <li>Multivariable Calculus for Engineers*</li>
+                <li>Introduction to Machine Learning*</li>
+                <li>Trends in Modern Web Development*</li>
+            </ul>
+            <p><em>* = in progress</em></p>
+        </div>
 
-        <footer>
-            <p>&copy; 2024 Arsh Singh</p>
-        </footer>
+        <div id="Experience" class="tabcontent">
+            <h2>Experience</h2>
+            <h4>Future Engineers Academy</h4>
+            <p>Founder, Head Instructor - Hicksville, NY (August 2023 - August 2024)</p>
+            <ul>
+                <li>Founded and led a youth organization focused on STEM education.</li>
+                <li>Designed and taught interactive STEM lessons at no cost.</li>
+                <li>Conducted three successful summer sessions at a public library.</li>
+                <li>Managed social media presence and shared STEM content.</li>
+            </ul>
+            <h4>Bethpage High School</h4>
+            <p>Student IT Helper - Bethpage, NY (June 2022 - August 2023)</p>
+            <ul>
+                <li>Volunteered for the IT department, assisting with technology setup and maintenance.</li>
+                <li>Organized and configured new district devices including Chromebooks and SMART Boards.</li>
+            </ul>
+            <h4>SnappyXO</h4>
+            <p>Teaching Assistant - Stony Brook, NY (July 2022 - August 2022)</p>
+            <ul>
+                <li>Volunteered as a teaching assistant for the 2022 CEWIT MTRC SnappyXO Robotics Camp under Dr. Anurag Purwar.</li>
+                <li>Assisted with lessons on robotics, mechanical design, electronics, programming, and physics using SnappyXO kits, Arduino IDE, and MotionGen.</li>
+            </ul>
+        </div>
+
+        <div id="Projects" class="tabcontent">
+            <h2>Projects</h2>
+            <h4>NFC Attendance System</h4>
+            <p><strong>Technologies:</strong> Python, Java, DigitalOcean (December 2023)</p>
+            <ul>
+                <li>Developed an attendance tracking system using NFC stickers and a Raspberry Pi sensor client.</li>
+                <li>Integrated with a Discord bot to relay attendance data and feature leaderboards.</li>
+            </ul>
+            <h4>Pulmonary Tuberculosis ANN Detection</h4>
+            <p><strong>Technologies:</strong> Python, TensorFlow (December 2022)</p>
+            <ul>
+                <li>Created a TensorFlow-based program to classify pulmonary X-rays for tuberculosis detection.</li>
+                <li>Received Honorable Mention at the Long Island Science and Engineering Fair.</li>
+            </ul>
+        </div>
     </body>
 </html>
